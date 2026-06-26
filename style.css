@@ -35,8 +35,8 @@ body{
 }
 
 .foto{
-    width:260px;
-    height:260px;
+    width:240px;
+    height:240px;
 
     object-fit:cover;
     object-position:center 35%;
