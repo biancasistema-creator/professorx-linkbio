@@ -1,204 +1,127 @@
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
 
-background:linear-gradient(160deg,#24365f,#1b2c52,#162544);
-
-min-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-overflow:hidden;
-
+    background:
+    radial-gradient(circle at top,#2b4b8f 0%,transparent 45%),
+    linear-gradient(160deg,#24365f,#1b2c52,#162544);
 }
 
 .background{
-
-position:fixed;
-
-width:100%;
-
-height:100%;
-
-background-image:
-
-radial-gradient(circle at 20% 30%,rgba(255,255,255,.08) 0,transparent 220px),
-
-radial-gradient(circle at 80% 70%,rgba(255,255,255,.05) 0,transparent 280px);
-
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(circle at 20% 20%,rgba(255,255,255,.06) 0,transparent 250px),
+    radial-gradient(circle at 80% 80%,rgba(255,255,255,.05) 0,transparent 250px);
+    pointer-events:none;
 }
 
 .card{
-
-position:relative;
-
-z-index:2;
-
-width:360px;
-
-text-align:center;
-
+    width:380px;
+    max-width:90%;
+    position:relative;
+    z-index:2;
+    text-align:center;
 }
 
 .foto{
-
-width:150px;
-
-height:150px;
-
-border-radius:50%;
-
-border:5px solid #d8c27a;
-
-margin-bottom:20px;
-
-object-fit:cover;
-
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #d7b35d;
+    margin-bottom:20px;
 }
 
 h1{
-
-color:white;
-
-font-size:42px;
-
-margin-bottom:8px;
-
+    color:white;
+    font-size:56px;
+    margin-bottom:8px;
 }
 
 .descricao{
-
-color:#d8d8d8;
-
-margin-bottom:35px;
-
+    color:#d9d9d9;
+    font-size:24px;
+    margin-bottom:35px;
 }
 
 .botao{
+    display:block;
+    width:100%;
+    padding:18px;
+    margin-bottom:16px;
 
-display:block;
+    border:none;
+    border-radius:14px;
 
-text-decoration:none;
+    text-decoration:none;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
 
-padding:18px;
-
-margin-bottom:15px;
-
-border-radius:14px;
-
-font-size:18px;
-
-font-weight:bold;
-
-color:white;
-
-border:none;
-
-cursor:pointer;
-
+    cursor:pointer;
 }
 
 .whatsapp{
-
-background:#28c76f;
-
+    background:#36d66b;
 }
 
 .email{
-
-background:#1e88e5;
-
-}
-
-.localizacao{
-
-background:#455a64;
-
+    background:#18a7ff;
 }
 
 .competencias{
-
-background:#c6a14d;
-
+    background:#cda14c;
 }
 
 #modal{
-
-display:none;
-
-position:fixed;
-
-background:rgba(0,0,0,.75);
-
-width:100%;
-
-height:100%;
-
-left:0;
-
-top:0;
-
-justify-content:center;
-
-align-items:center;
-
-z-index:99;
-
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
 }
 
 .janela{
-
-background:white;
-
-padding:35px;
-
-border-radius:18px;
-
-width:90%;
-
-max-width:600px;
-
+    width:90%;
+    max-width:650px;
+    background:white;
+    border-radius:18px;
+    padding:35px;
 }
 
 .janela h2{
+    margin-bottom:25px;
+}
 
-margin-bottom:20px;
-
+.janela ul{
+    padding-left:22px;
 }
 
 .janela li{
-
-margin-bottom:18px;
-
-font-size:18px;
-
+    margin-bottom:18px;
+    font-size:20px;
 }
 
 #fecharModal{
-
-margin-top:20px;
-
-padding:12px 30px;
-
-background:#24365f;
-
-color:white;
-
-border:none;
-
-border-radius:10px;
-
-cursor:pointer;
-
+    margin-top:20px;
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
+    background:#24365f;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
 }
