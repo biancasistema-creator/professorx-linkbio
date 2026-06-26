@@ -1,23 +1,21 @@
-const modal=document.getElementById("modal");
+document.addEventListener("DOMContentLoaded", function () {
 
-document.getElementById("abrirModal").onclick=()=>{
+    const modal = document.getElementById("modal");
+    const abrir = document.getElementById("abrirModal");
+    const fechar = document.getElementById("fecharModal");
 
-modal.style.display="flex";
+    abrir.addEventListener("click", function () {
+        modal.style.display = "flex";
+    });
 
-}
+    fechar.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
 
-document.getElementById("fecharModal").onclick=()=>{
+    window.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
 
-modal.style.display="none";
-
-}
-
-window.onclick=(e)=>{
-
-if(e.target==modal){
-
-modal.style.display="none";
-
-}
-
-}
+});
